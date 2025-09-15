@@ -1,0 +1,21 @@
+.CanvasContainer {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.Canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+}

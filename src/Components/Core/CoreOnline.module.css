@@ -1,0 +1,60 @@
+.CanvasContainer {
+  padding: 20px;
+  box-sizing: border-box;
+  height: calc(85% - 4rem);
+  width: 100%;
+}
+
+.Canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.DisplayMessageDiv {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom: 5rem;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.507);
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeout 2s ease-out 2s;
+}
+
+.DisplayMessageEmojiDiv {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom: 5rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeout 2s ease-out 2s;
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+  }
+}

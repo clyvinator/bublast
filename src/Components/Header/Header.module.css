@@ -1,0 +1,56 @@
+.HeaderMainDiv {
+  color: white;
+  height: 3em;
+  width: 100%;
+  background-color: #2a3541;
+  /* position: fixed; */
+  top: 0;
+}
+
+.HeaderHome {
+  height: 100%;
+  width: auto;
+  line-height: normal;
+  float: left;
+}
+
+.HeaderUserStatus {
+  height: 100%;
+  width: auto;
+  line-height: normal;
+  float: right;
+}
+
+.HeaderButton {
+  height: 100%;
+  border: none;
+  background: none;
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.HeaderButton:hover {
+  cursor: pointer;
+}
+
+.HeaderUserInfo {
+  font-size: 0.8em;
+  display: none;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+  padding: 0.11em;
+  color: black;
+  position: relative;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 2;
+}
+
+.HeaderUserInfo:hover {
+  display: block;
+}
+
+.HeaderButton:hover ~ .HeaderUserInfo {
+  display: block;
+}

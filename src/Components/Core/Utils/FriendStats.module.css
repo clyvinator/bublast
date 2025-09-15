@@ -1,0 +1,74 @@
+.FriendStatsContainer {
+  color: white;
+  height: 15%;
+  box-sizing: border-box;
+  margin-left: 4em;
+  margin-right: 4em;
+  position: relative;
+  background-color: #2a3541;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.FriendStatsColumn {
+  display: inline-block;
+  width: 33.33%;
+  vertical-align: middle;
+}
+
+.FriendStatsName::first-letter {
+  text-transform: capitalize;
+}
+
+.FriendStatsVisual {
+  height: 30px;
+  width: 30px;
+  content: "";
+  display: inline-block;
+  border-radius: 40px;
+}
+
+.FriendStatsTime {
+  height: 0.4em;
+  width: 0%;
+  position: absolute;
+  background-color: white;
+  bottom: 0em;
+  overflow: hidden;
+  margin: auto;
+  left: 0;
+  right: 0;
+  transition: width 90ms ease-in;
+}
+
+@media (max-width: 600px) {
+  .FriendStatsContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0.2em;
+    font-size: 0.8em;
+  }
+  .FriendStatsVisual {
+    height: 15px;
+    width: 15px;
+  }
+  .FriendStatsColumn {
+    width: 37.5%;
+  }
+  .FriendStatsMiddleColumn {
+    width: 25%;
+  }
+}
+
+@media (max-height: 720px) {
+  .FriendStatsContainer {
+    padding: 0.2em;
+    font-size: 0.8em;
+  }
+  .FriendStatsVisual {
+    height: 15px;
+    width: 15px;
+  }
+}

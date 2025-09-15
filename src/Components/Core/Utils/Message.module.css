@@ -1,0 +1,163 @@
+.MessageContainer {
+  position: fixed;
+  height: 3rem;
+  width: calc(100% - 8rem);
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-radius: 50px;
+  background-color: #2a3541;
+}
+
+.MessageContainer.Disabled::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 3rem;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.SentPreview {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  margin: 0 auto;
+  width: auto;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom: 5rem;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.507);
+  border-radius: 50px;
+  text-align: center;
+  animation: sentPreview 800ms linear 150ms;
+}
+
+.DisplayMessageEmojiPreview {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  margin: 0 auto;
+  width: auto;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom: 5rem;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  text-align: center;
+  opacity: 0;
+  animation: sentPreview 800ms;
+}
+
+@keyframes sentPreview {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 20rem;
+    opacity: 0%;
+  }
+}
+
+.MessageSmileyLeftContainer {
+  width: 30%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+.MessageSmileyRightContainer {
+  width: 30%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.EmojiContainer {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.EmojiImg {
+  height: 2.5rem;
+  margin-top: 0.25rem;
+}
+
+.MessageTextContainer {
+  width: 40%;
+  display: inline-block;
+  height: 100%;
+}
+
+.MessageTextContainer input:focus {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+
+/* .MessageTextContainer input:hover {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+} */
+
+.MessageTextContainer input {
+  width: calc(100% - 0.5rem);
+  text-align: center;
+  right: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  background-color: #3a4857;
+  color: rgb(160, 160, 160);
+}
+
+.MessageTextContainer button {
+  width: 100%;
+}
+
+.MessageSendContainer {
+  width: 4em;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .EmojiImg {
+    height: 1.5rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .MessageContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .MessageTextContainer {
+    width: 26%;
+  }
+
+  .MessageSmileyRightContainer {
+    width: 37%;
+  }
+  .MessageSmileyLeftContainer {
+    width: 37%;
+  }
+}

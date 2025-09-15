@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "pretty-formatter.indentSize": 2,
+  "pretty-formatter.indentLevel": 2,
+  "pretty-formatter.comments": true,
+  "pretty-formatter.commentLine": true
+}

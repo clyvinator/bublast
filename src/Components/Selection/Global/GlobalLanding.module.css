@@ -1,0 +1,102 @@
+.GlobalLandingMainDiv {
+  height: 100%;
+  width: 100%;
+}
+
+.GlobalLandingPulserContainer {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.GlobalLandingPulseLabel {
+  height: 2em;
+  width: auto;
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 2em;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.GlobalLandingPulse {
+  background-color: yellow;
+  height: 8em;
+  width: 8em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: pulser 2s linear infinite;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.GlobalLandingPulse1 {
+  animation-delay: -0.666s;
+}
+
+.GlobalLandingPulse2 {
+  animation-delay: -1.333s;
+}
+
+.GlobalLandingPulse3 {
+  animation-delay: -1.999s;
+}
+
+.Button {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  height: 3rem;
+  width: 14rem;
+  border-radius: 40px;
+  background: none;
+  background-color: rgba(255, 255, 0, 0.2);
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 1.2rem;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: #161c22;
+}
+
+@keyframes pulser {
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.ConnectionStatsContainer {
+  color: white;
+  position: fixed;
+  bottom: 0em;
+  left: 0;
+  right: 0;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 3em;
+  z-index: 3;
+}

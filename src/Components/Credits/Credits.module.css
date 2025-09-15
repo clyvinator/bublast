@@ -1,0 +1,14 @@
+.CreditsDiv {
+  padding: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: gray;
+}
+
+.CreditsDiv a {
+  color: gray;
+  text-decoration: underline;
+}

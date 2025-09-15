@@ -1,0 +1,51 @@
+.NameInput {
+  border-radius: 40px;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: 3px solid;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.CodeInputError {
+  border: 3px solid red;
+}
+
+.ErrorText {
+  color: red;
+  font-size: 1em;
+}
+
+.Button {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  height: 3em;
+  width: 14em;
+  border-radius: 40px;
+  background: none;
+  background-color: rgba(255, 255, 0, 0.2);
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 1.2em;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: #161c22;
+}
+
+.Disabled {
+  border-color: gray;
+  background-color: gray !important;
+  cursor: default !important;
+  color: #161c22 !important;
+}
+
+@media (max-width: 500px) {
+  .Button {
+    /* font-size: 1em; */
+  }
+}
